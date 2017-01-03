@@ -1,1 +1,38 @@
-theme: jekyll-theme-slate
+# Site settings
+title: 'Lefika Ngwenya'
+description: 'Full-stack software developer, sport fanatic'
+url: 'https://nlefika.github.io'
+baseurl: '/'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Lefika Ngwenya'
+  email: lefika.ngwenya@gmail.com
+  twitter_username: lfika
+  github_username:  nlefika
+  linkedin_username:  lefikangwenya
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
